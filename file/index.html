@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="/js/main.js"></script>
+	<link rel="stylesheet" href="/css/main.css">
+  <script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  
+</head>
+<body>
+<div class="gridWrap">
+  
+  <div class="gdItem gdItem1 hightLWarp">
+    <h2>1강. 변수</h2>
+	<ul>
+		<li> <span class="highLighter"><span>var</span></span> : 변수를 선언하는 키워드 
+			<p>ex)var name="변수명(문자열)"<br>
+			var는 ES6이 나온 이후로 비권장</p>
+		</li>
+		<li  class="my-1"><span class="highLighter"><span>let</span></span> : 변수의 값이 빈번하게 변경이 일어날떄 사용
+			<p class="boxNormal codeTip my-05 p-05">
+				let score=0;<br>
+				score-score+1;<br>
+				console.log(score)<br>
+			</p>
+		</li>
+		<li class="my-1"><span class="highLighter"><span>const</span></span> : 변수의 값이 변화가 없을때 사용
+			<ul class="listTypeA">
+				<li>값이 변화하지 않기 때문에 예측가능하다</li>
+				<li>블럭단위이기 때문에 블럭안에서 작성된 변수는 블럭 밖에서 호출할 수 없다. </li>
+				<li>블럭밖에서 선언 되더라고 블럭 위에서 선언되면 아래로 타고 내려올 수 있다. (뭔소리야)</li>
+			</ul>
+
+		</li>
+	</ul>
+  </div>
+  <div class="gdItem gdItem2 hightLWarp">
+    <h2>2강. 데이터타입</h2>
+    <ul class="listTypeA">
+      <li>String(문자) <span class="exampleA">ex</span> const name = "scalper" <span class="txtTip">문자열은 쌍따옴표("") 안에 선언한다</span></li>
+      <li>Number(숫자) <span class="exampleA">ex</span> const age="30"</li>
+      <li>boolean(참거짓) <span class="exampleA">ex</span> const is Mail = true;         const isFemale =flase;</li>
+      <li>null(값을 비워놓은것) <span class="exampleA">ex</span> let money = null;</li>
+      <li>undefined(값이없는거) <span class="exampleA">ex</span> let girlFriend = undefinded;</li>
+    </ul>
+    <h3>sample Code 1</h3>
+    <p class="boxNormal codeTip my-05 p-05">
+      const name = "scalper";<br>
+    const age="30";<br>
+    const isMale = true;<br>
+    const isFemale = false;<br>
+    let money = null;<br>
+    let girlFriend = undefined;
+    </p>
+    <h3>sample Code 1 출력예</h3>
+    <p class="boxNormal codeTip my-05 p-05">
+          console.log(typeof name)<br>
+    console.log(typeof money)<br>
+    console.log(typeof girlFriend)<br>
+    console.log(name, age, isMale, money)<br>
+    <span class="subTit">문장으로 넣고 싶을때-옛날방식</span><br>
+    console.log("my name is " + name +  " and i am " + age)<br>
+    <sapn class="subTit">문장으로 넣고 싶을때-ES6 템플릿</sapn><br>
+    console.log(`내 이름은 ${name} 이고 나이는 ${age}입니다.`)
+        </p>
+     
+    <h3>sample Code 2 > <span class="highLighter"><span>substring</span></span></h3>
+    <p class="boxNormal codeTip my-05 p-05">
+      <sapn class="subTit">문자열을 중간에 자르는거(문자열의 인덱스는 0부터 시작)</sapn><br>  
+    const animal="tiger"<br>
+    console.log(animal.substring(0,2))<br>
+    console.log(animal.substring(2,5)) <span class="txtTip">두번째 인덱스부터 5번 앞 인덱스까지 출력해라는 뜻</span>
+    </p>
+    <h3>sample Code 3 > <span class="highLighter"><span>split</span></span></h3>
+    <p class="boxNormal codeTip my-05 p-05">
+      <sapn class="subTit">문자열을 쪼개는거(split이라는 메서드사용)</sapn><br>
+let fruits="사과 , 딸기, 포도, 참외";<br>
+fruits = fruits.split(",");<br>
+console.log(fruits);<span class="txtTip"> 1~4까지 쪼개서 출력</span><br>
+console.log(fruits[3]); <span class="txtTip">세번째 과일만 출력</span>
+      </p>
+  </div>
+  <div class="gdItem gdItem3">3</div>
+  <div class="gdItem gdItem4">4</div>
+  <div class="gdItem gdItem5">5</div>
+  <div class="gdItem gdItem6">6</div>
+  <div class="gdItem gdItem7">7</div>
+  <div class="gdItem gdItem8">8</div>
+  <div class="gdItem gdItem9">9</div>
+  <div class="gdItem gdItem10">10</div>
+  <div class="gdItem gdItem11">11</div>
+  <div class="gdItem gdItem12">12</div>
+  <div class="gdItem gdItem13">13</div>
+  <div class="gdItem gdItem14">14</div>
+  <div class="gdItem gdItem15">15</div>
+  <div class="gdItem gdItem16">16</div>
+  <div class="gdItem gdItem17">17</div>
+  <div class="gdItem gdItem18">18</div>
+  <div class="gdItem gdItem19">19</div>
+  <div class="gdItem gdItem20">20</div>
+  <div class="gdItem gdItem21">21</div>
+  <div class="gdItem gdItem22">22</div>
+  <div class="gdItem gdItem23">23</div>
+  <div class="gdItem gdItem24">24</div>
+  <div class="gdItem gdItem25">25</div>
+  <div class="gdItem gdItem26">26</div>
+  <div class="gdItem gdItem27">27</div>
+  
+	
+</div>
+</body>
+</html>
